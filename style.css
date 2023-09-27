@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  body h1 {
+    color:#FFFFDD;
+    text-shadow: black 1px 0 7px;
+  }
+
+  
+  
+  .input-container {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 10px;
+  }
+
+  .container.rounded{
+    border-radius: 20px;
+    background-color: #016A70;
+    color: #FFFFDD;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 1px 50px #024c50 inset;
+  }
+
+  .card-container{
+    width: 80vw;
+    border-radius: 20px;
+    background-color:none;
+    color: #FFFFDD;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 20vh;
+    gap: 5px;
+  }
+  .panel{
+    color: aliceblue;
+    background-size: auto 190%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+.panel:hover{
+    filter: brightness(0.6);
+    flex: 0.6;
+    background-size: auto 200%;
+}
+
+.panel h3{
+    font-size: 18px;
+    position: absolute;
+    bottom: 12%;
+    left: 12%;
+    margin: 0;
+    opacity: 0;
+    text-shadow: 1px 1px 2px black;
+}
+.panel h2{
+    font-size: 15px;
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+    margin: 0;
+    opacity: 0;
+    text-shadow: 1px 1px 2px black;
+}
+.panel.active:hover h2{
+    transition: opacity 0.3s ease-in 0.2s;
+    opacity: 1;
+}
+.panel.active{
+    flex: 1;
+    transition: 0.5sec ease-in;
+
+}
+.panel.active:hover{
+    flex:1;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #A2C579;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    filter: brightness(0.9);
+  }
+
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .shadow{
+    text-shadow: black 1px 0 6px;
+
+  }
+  
